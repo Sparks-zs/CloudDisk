@@ -1,0 +1,126 @@
+QScrollArea{
+    background-color: transparent;
+    border: none;
+}
+
+#filelistWidget{
+    background-color: transparent;
+    border: none;
+}
+
+QWidget#title QToolButton{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+
+    icon-size: 10px;
+}
+
+QWidget#title QToolButton#backButton:enabled{
+    image: url(:/images/filewindow/back_black.svg);
+}
+
+QWidget#title QToolButton#backButton:hover{
+    image: url(:/images/filewindow/back_gray.svg);
+}
+
+QWidget#toolBar QToolButton{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+
+    icon-size: 20px;
+}
+
+QWidget#toolBar QToolButton#updateButton{
+    icon-size: 10px;
+}
+
+QWidget#toolBar QToolButton#updateButton:enabled{
+    image: url(:/images/filewindow/update_black.svg);
+}
+
+QWidget#toolBar QToolButton#updateButton:pressed{
+    padding-left:2px;
+    padding-top:2px;
+}
+
+QWidget#toolBar QWidget#searchBar{
+    background-color: #ECE8FF;
+    border-radius: 10px;
+    padding:-10px;
+}
+
+QWidget#toolBar QWidget#searchBar QLineEdit#searchEdit{
+    background-color: transparent;
+}
+
+QWidget#toolBar QWidget#searchBar QPushButton#searchButton{
+    background-color: transparent;
+    image: url(:/images/filewindow/search_black.svg);
+}
+
+QWidget#toolBar QWidget#searchBar QPushButton#searchButton{
+    image: url(:/images/filewindow/search_black.svg);
+}
+
+QWidget#toolBar QWidget#searchBar QPushButton#searchButton:pressed{
+    padding-left: 2px;
+    padding-top: 2px;
+}
+
+QWidget#toolBar QToolButton#addButton::menu-indicator{
+    image: none;
+}
+
+QWidget#toolBar QToolButton#addButton{
+    background-position: center;
+    background-color: #6A4BFF;
+    background-repeat: no-repeat;
+
+    icon-size: 20px;
+    border-radius: 10px;
+    image: url(:/images/filewindow/add_white.svg);
+}
+
+QWidget#toolBar QToolButton#addButton:hover{
+    background-color: #2B23D0;
+}
+
+QMenu{
+    background-color: white;
+    border: 1px solid #bbbbbb;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+QMenu::item{
+    border-radius: 5px;
+    padding: 5px;
+}
+
+QMenu::item:selected{
+    background: #6A4BFF;
+}
+
+QScrollBar{
+  border: none;
+  background-color: transparent;
+}
+
+/* 向上区域样式 */
+QScrollBar::sub-line:vertical {
+    border: none;
+    background: transparent;
+}
+
+/* 向下区域样式 */
+QScrollBar::add-line:vertical {
+    background: transparent;
+    border: none;
+}
+
+/* 滑块区域样式 */
+QScrollBar::handle:vertical {
+  background: transparent;
+}

@@ -1,0 +1,91 @@
+QTabWidget{
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+}
+
+QTabWidget::tab-bar {
+    left:20px;
+}
+
+QTabBar::tab{
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    margin-left: 1px;
+    margin-right: 1px;
+
+    border-radius: 10px;
+/*    border-top-right-radius: 2px;*/
+
+    padding: 8px;
+}
+
+QTabBar::tab:!selected {
+    background-color: white;
+}
+
+QTabBar::tab:selected {
+    background-color: #ECE8FF;
+}
+
+QTabBar::tab:hover {
+    background-color: #ECE8FF;
+    color: white;
+}
+
+QTableWidget{
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    selection-background-color:#ECE8FF;	/*选中行的背景颜色*/
+
+    outline: none;
+/*    border: none;*/
+    border-radius: 20px;
+}
+
+QHeaderView{
+    background-color: transparent;
+
+}
+QHeaderView::section{
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+QTableWidget::item{
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+QTableWidget::item:hover{
+    background-color: #ECE8FF;
+}
+
+QTableWidget::item:selected{
+    background-color: #ECE8FF;
+    color: black;
+}
+
+QProgressBar {
+    background-color: #ECE8FF;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    text-align: right;
+    border-radius: 5px;
+}
+
+QProgressBar::chunk {
+    background-color: #6A4BFF;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 5px;
+}

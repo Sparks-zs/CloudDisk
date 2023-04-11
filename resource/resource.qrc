@@ -1,0 +1,43 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>mainwindow/close_black.svg</file>
+        <file>mainwindow/close_gray.svg</file>
+        <file>mainwindow/max_black.svg</file>
+        <file>mainwindow/max_gray.svg</file>
+        <file>mainwindow/min_black.svg</file>
+        <file>mainwindow/min_gray.svg</file>
+        <file>mainwindow/navigator_black.svg</file>
+        <file>mainwindow/navigator_gray.svg</file>
+        <file>mainwindow/navigator_white.svg</file>
+        <file>mainwindow/transfer_black.svg</file>
+        <file>mainwindow/transfer_gray.svg</file>
+        <file>mainwindow/transfer_white.svg</file>
+        <file>filewindow/search_black.svg</file>
+        <file>filewindow/search_gray.svg</file>
+        <file>filewindow/update_black.svg</file>
+        <file>filewindow/update_gray.svg</file>
+        <file>filewindow/back_black.svg</file>
+        <file>filewindow/back_gray.svg</file>
+        <file>filewindow/add_white.svg</file>
+        <file>file/folder.svg</file>
+        <file>file/jpg.svg</file>
+        <file>file/mp4.svg</file>
+        <file>file/txt.svg</file>
+        <file>file/upload.svg</file>
+        <file>file/zip.svg</file>
+        <file>file/png.svg</file>
+        <file>file/unknown.svg</file>
+        <file>mainwindow/cloud.svg</file>
+        <file>file/mkv.svg</file>
+        <file>mainwindow/play_black.svg</file>
+        <file>mainwindow/play_gray.svg</file>
+        <file>mainwindow/play_white.svg</file>
+    </qresource>
+    <qresource prefix="/qss">
+        <file>mainwindow/qss.qss</file>
+        <file>filewindow/filewindow.qss</file>
+        <file>file/file.qss</file>
+        <file>transferwindow/transferwindow.qss</file>
+        <file>playerwindow/playerwindow.qss</file>
+    </qresource>
+</RCC>

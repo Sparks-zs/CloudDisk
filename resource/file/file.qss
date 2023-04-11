@@ -1,0 +1,60 @@
+QWidget#FileWidget{
+    background-color: transparent;
+    background-origin: content;
+    background-position: top;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    text-align: bottom;
+}
+
+QWidget#FileWidget:hover{
+    background-color: rgba(0,0,0,5%);
+}
+
+/*fixme*/
+QWidget#FileWidget:pressed{
+    background-color: blue;
+}
+
+
+QWidget#FileWidget QWidget#icon{
+    background-color: transparent;
+    background-origin: content;
+    background-position: center;
+    background-repeat: no-repeat;
+    image: url(:/images/file/txt.svg);
+}
+
+QWidget#FileWidget[filetype="folder"] QWidget#icon{
+    image: url(:/images/file/folder.svg);
+}
+
+QWidget#FileWidget[filetype="txt"] QWidget#icon{
+    image: url(:/images/file/txt.svg);
+}
+
+QWidget#FileWidget[filetype="png"] QWidget#icon{
+    image: url(:/images/file/png.svg);
+}
+
+QWidget#FileWidget[filetype="jpg"] QWidget#icon{
+    image: url(:/images/file/jpg.svg);
+}
+
+QWidget#FileWidget[filetype="mp4"] QWidget#icon{
+    image: url(:/images/file/mp4.svg);
+}
+
+QWidget#FileWidget[filetype="mkv"] QWidget#icon{
+    image: url(:/images/file/mkv.svg);
+}
+
+QWidget#FileWidget[filetype="zip"] QWidget#icon{
+    image: url(:/images/file/zip.svg);
+}
+
+QWidget#FileWidget[filetype="unknown"] QWidget#icon{
+    image: url(:/images/file/unknown.svg);
+}
+
+

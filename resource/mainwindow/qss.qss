@@ -1,0 +1,104 @@
+QMainWindow QWidget#centralWidget{
+    background-position: center;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #FAF8FF;
+}
+
+QMainWindow QWidget#topBar{
+
+}
+
+QMainWindow QWidget#topBar QToolButton{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+
+    icon-size: 10px;
+}
+
+QMainWindow QWidget#topBar QToolButton#minButton:enabled{
+    image: url(:/images/mainwindow/min_black.svg);
+}
+
+QMainWindow QWidget#topBar QToolButton#minButton:hover{
+    image: url(:/images/mainwindow/min_gray.svg);
+}
+
+QMainWindow QWidget#topBar QToolButton#maxButton:enabled{
+    image: url(:/images/mainwindow/max_black.svg);
+}
+
+QMainWindow QWidget#topBar QToolButton#maxButton:hover{
+    image: url(:/images/mainwindow/max_gray.svg);
+}
+
+QMainWindow QWidget#topBar QToolButton#closeButton:enabled{
+    image: url(:/images/mainwindow/close_black.svg);
+}
+
+QMainWindow QWidget#topBar QToolButton#closeButton:hover{
+    image: url(:/images/mainwindow/close_gray.svg);
+}
+
+QMainWindow QWidget#sideBar{
+    background-color: #ECE8FF;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+QMainWindow QWidget#sideBar QToolButton{
+    background-position: center;
+    background-color: transparent;
+    background-repeat: no-repeat;
+
+    margin:10px;
+    padding: 10px;
+    icon-size: 20px;
+    border-radius: 12px;
+}
+
+QMainWindow QWidget#sideBar QToolButton#icon{
+    image: url(:/images/mainwindow/cloud.svg);
+/*    background-color: #6A4BFF;*/
+
+}
+
+QMainWindow QWidget#sideBar QToolButton#fileButton:enabled{
+    image: url(:/images/mainwindow/navigator_black.svg);
+}
+
+QMainWindow QWidget#sideBar QToolButton#fileButton:hover{
+    image: url(:/images/mainwindow/navigator_gray.svg);
+}
+
+QMainWindow QWidget#sideBar QToolButton#fileButton:checked{
+    image: url(:/images/mainwindow/navigator_white.svg);
+    background-color: #6A4BFF;
+}
+
+QMainWindow QWidget#sideBar QToolButton#transferButton:enabled{
+    image: url(:/images/mainwindow/transfer_black.svg);
+}
+
+QMainWindow QWidget#sideBar QToolButton#transferButton:hover{
+    image: url(:/images/mainwindow/transfer_gray.svg);
+}
+
+QMainWindow QWidget#sideBar QToolButton#transferButton:checked{
+    image: url(:/images/mainwindow/transfer_white.svg);
+    background-color: #6A4BFF;
+}
+
+QMainWindow QWidget#sideBar QToolButton#playerButton:enabled{
+    image: url(:/images/mainwindow/play_black.svg);
+}
+
+QMainWindow QWidget#sideBar QToolButton#playerButton:hover{
+    image: url(:/images/mainwindow/play_gray.svg);
+}
+
+QMainWindow QWidget#sideBar QToolButton#playerButton:checked{
+    image: url(:/images/mainwindow/play_white.svg);
+    background-color: #6A4BFF;
+}

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TransferWindow</class>
+ <widget class="QWidget" name="TransferWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="uploadTab">
+      <attribute name="title">
+       <string>正在上传</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <property name="leftMargin">
+        <number>10</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>10</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QTableWidget" name="uploadTableWidget">
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="lineWidth">
+          <number>0</number>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QAbstractScrollArea::AdjustIgnored</enum>
+         </property>
+         <property name="dragEnabled">
+          <bool>true</bool>
+         </property>
+         <property name="dragDropMode">
+          <enum>QAbstractItemView::DragOnly</enum>
+         </property>
+         <property name="defaultDropAction">
+          <enum>Qt::MoveAction</enum>
+         </property>
+         <property name="selectionMode">
+          <enum>QAbstractItemView::ExtendedSelection</enum>
+         </property>
+         <property name="selectionBehavior">
+          <enum>QAbstractItemView::SelectRows</enum>
+         </property>
+         <property name="textElideMode">
+          <enum>Qt::ElideMiddle</enum>
+         </property>
+         <property name="showGrid">
+          <bool>false</bool>
+         </property>
+         <property name="gridStyle">
+          <enum>Qt::NoPen</enum>
+         </property>
+         <property name="cornerButtonEnabled">
+          <bool>true</bool>
+         </property>
+         <property name="rowCount">
+          <number>0</number>
+         </property>
+         <property name="columnCount">
+          <number>4</number>
+         </property>
+         <attribute name="horizontalHeaderVisible">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="horizontalHeaderCascadingSectionResizes">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderHighlightSections">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderCascadingSectionResizes">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderHighlightSections">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderStretchLastSection">
+          <bool>false</bool>
+         </attribute>
+         <column/>
+         <column/>
+         <column/>
+         <column/>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="downloadTab">
+      <attribute name="title">
+       <string>正在下载</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <property name="leftMargin">
+        <number>10</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>10</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QTableWidget" name="downloadTableWidget">
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="tabKeyNavigation">
+          <bool>false</bool>
+         </property>
+         <property name="showDropIndicator" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="selectionBehavior">
+          <enum>QAbstractItemView::SelectRows</enum>
+         </property>
+         <property name="textElideMode">
+          <enum>Qt::ElideMiddle</enum>
+         </property>
+         <property name="showGrid">
+          <bool>false</bool>
+         </property>
+         <property name="gridStyle">
+          <enum>Qt::NoPen</enum>
+         </property>
+         <property name="rowCount">
+          <number>0</number>
+         </property>
+         <property name="columnCount">
+          <number>4</number>
+         </property>
+         <attribute name="horizontalHeaderHighlightSections">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderHighlightSections">
+          <bool>false</bool>
+         </attribute>
+         <column/>
+         <column/>
+         <column/>
+         <column/>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="finishedTab">
+      <attribute name="title">
+       <string>已完成</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <property name="leftMargin">
+        <number>10</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>10</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QTableWidget" name="finishedTableWidget">
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="lineWidth">
+          <number>0</number>
+         </property>
+         <property name="tabKeyNavigation">
+          <bool>false</bool>
+         </property>
+         <property name="selectionMode">
+          <enum>QAbstractItemView::ExtendedSelection</enum>
+         </property>
+         <property name="selectionBehavior">
+          <enum>QAbstractItemView::SelectRows</enum>
+         </property>
+         <property name="textElideMode">
+          <enum>Qt::ElideLeft</enum>
+         </property>
+         <property name="showGrid">
+          <bool>false</bool>
+         </property>
+         <property name="gridStyle">
+          <enum>Qt::NoPen</enum>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+         <property name="cornerButtonEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="rowCount">
+          <number>0</number>
+         </property>
+         <property name="columnCount">
+          <number>3</number>
+         </property>
+         <attribute name="horizontalHeaderHighlightSections">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderHighlightSections">
+          <bool>false</bool>
+         </attribute>
+         <column/>
+         <column/>
+         <column/>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
