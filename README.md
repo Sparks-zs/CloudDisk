@@ -14,4 +14,4 @@
 
 
 ## 远程视频播放
-![1681140545025](https://user-images.githubusercontent.com/44738662/230932923-892052a4-fe6d-4ae4-a4ea-86f0252bf999.png)
+![image](https://user-images.githubusercontent.com/44738662/231226735-70237c06-2c88-4222-8a8b-f634badce3fa.png)
