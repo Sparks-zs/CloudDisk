@@ -10,6 +10,7 @@
 #include "filewindow.h"
 #include "ui_filewindow.h"
 #include "playerwindow.h"
+#include "../config.h"
 #include "../widgets/flowlayout.h"
 #include "../network/networkmanager.h"
 #include "../network/networkcontroller.h"
@@ -169,7 +170,8 @@ void FileWindow::onFileWidgetOpen()
         update();
     }
     else if(fileWidget->type() == FileInfo::MP4){
-        PlayerWindow::getInstance()->addVideoFile(fileWidget->info());
+        QString url = QString(URL) + "/video/file?path=" + fileWidget->info().path();
+        PlayerWindow::getInstance()->addVideo(url);
     }
 }
 

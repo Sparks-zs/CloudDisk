@@ -31,10 +31,6 @@ void MainWindow::initUI()
     NetworkManager::instance()->moveToThread(thread);
     thread->start();
 
-    QThread* thread2 = new QThread();
-    PlayerWindow::getInstance()->moveToThread(thread2);
-    thread2->start();
-
     setAttribute(Qt::WA_StyledBackground, true);
     setAttribute(Qt::WA_TranslucentBackground);
     setWindowFlags(Qt::FramelessWindowHint);

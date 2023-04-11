@@ -4,30 +4,19 @@
 #include <QWidget>
 #include <QMediaPlayer>
 #include <QListWidget>
-#include <QBuffer>
+#include <QAbstractItemView>
 
 #include "../network/fileinfo.h"
+#include "../media/videowidget.h"
+#include "../media/playlistmodel.h"
+#include "../media/qmediaplaylist.h"
+#include "../media/playercontrols.h"
 
 namespace Ui {
 class PlayerWindow;
 }
 
 namespace CloudDisk{
-
-class PlayListItem : public QWidget
-{
-    Q_OBJECT
-public:
-    PlayListItem(const FileInfo& info, QWidget* parent=nullptr);
-    QString filename() { return _info.name(); }
-    QString filePath() { return _info.path(); }
-    FileInfo info() { return _info; }
-private:
-    void init();
-
-    FileInfo _info;
-};
-
 
 class PlayerWindow : public QWidget
 {
@@ -44,38 +33,42 @@ public:
     ~PlayerWindow();
 
     void init();
-    void addVideoFile(const FileInfo& info);
+    bool isPlayerAvailable() const;
+    void addVideo(const QString& url);
+    void addToPlaylist(const QList<QUrl> &urls);
 
 private slots:
-    void do_stateChanged(QMediaPlayer::PlaybackState state);
-    void do_durationChanged(qint64 duration);
-    void do_postionChanged(qint64 position);
+    void open();
+    void seek(int mseconds);
+    void jump(const QModelIndex &index);
+    void playlistPositionChanged(int currentItem);
+    void durationChanged(qint64 duration);
+    void positionChanged(qint64 progress);
+    void previousClicked();
+
+    void statusChanged(QMediaPlayer::MediaStatus status);
+    void bufferingProgress(float progress);
+    void videoAvailableChanged(bool available);
+    void displayErrorMessage();
 
     void on_openButton_clicked();
-    void on_playButton_clicked();
-    void on_pauseButton_clicked();
-    void on_stopButton_clicked();
-    void on_fullScreenButton_clicked();
-
-    void on_volumeSlider_valueChanged(int value);
-    void on_videoPositionSlider_valueChanged(int value);
-
-    void onPlayListItemClicked(QListWidgetItem* item);
-    void onPlayListItemDoubleClicked(QListWidgetItem* item);
-
-    void onMediaStatusChanged(QMediaPlayer::MediaStatus status);
-
 private:
     static PlayerWindow* _instance;
     explicit PlayerWindow(QWidget *parent = nullptr);
+    void updateDurationInfo(qint64 currentInfo);
+    void handleCursor(QMediaPlayer::MediaStatus status);
 
     Ui::PlayerWindow *ui;
     QString _url;
-    QMediaPlayer* _player;
-    QString _durationTime;
-    QString _positionTime;
 
-    QBuffer* _loadBuffer;
+    QAudioOutput* _audioOutput;
+    QMediaPlayer* _player;
+    VideoWidget* _videoWidget;
+    PlaylistModel* _playlistModel;
+    QMediaPlaylist* _playlist;
+    QAbstractItemView* _playlistView;
+
+    qint64 _duration;
 };
 
 }

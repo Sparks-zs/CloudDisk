@@ -5,13 +5,11 @@ add_library(window STATIC
     playerwindow.cpp playerwindow.h playerwindow.ui
 )
 
-find_package(Qt6 REQUIRED COMPONENTS MultimediaWidgets)
-
 target_link_libraries(window PRIVATE
     widgets
     network
+    media
     Qt${QT_VERSION_MAJOR}::Widgets
-    Qt6::MultimediaWidgets
 )
 
 target_link_directories(window

@@ -27,7 +27,7 @@ set(PROJECT_SOURCES
 
 add_subdirectory(network)
 add_subdirectory(widgets)
-#add_subdirectory(media)
+add_subdirectory(media)
 add_subdirectory(window)
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -59,7 +59,7 @@ endif()
 
 target_link_libraries(CloudDisk PRIVATE
     window
-    #media
+    media
     widgets
     network
 )
