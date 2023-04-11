@@ -53,7 +53,15 @@ QVariant PlaylistModel::data(const QModelIndex &index, int role) const
         QVariant value = m_data[index];
         if (!value.isValid() && index.column() == Title) {
             QUrl location = m_playlist->media(index.row());
-            return QFileInfo(location.path()).fileName();
+            if(location.isLocalFile())
+                return QFileInfo(location.path()).fileName();
+            else{
+                QString url = location.toString();
+                qsizetype pos = url.indexOf("path=");
+                QString filepath = url.right(url.length() - (pos + 5));
+                return filepath;
+            }
+
         }
 
         return value;
